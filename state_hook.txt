@@ -1,0 +1,35 @@
+import React { useState } from 'react';
+
+function Example() {
+    // Declare new state variable, which we'll call "count"
+    const [count, setCount] = useState(0);
+
+    return {
+        <div>
+            <p>YOu clicked {count} times</p>
+            <button onclick={ () => 
+                setCount( count + 1) }>
+                Click me
+            </button>
+        </div>
+    };
+   }
+
+
+// useState is Hook
+// it returns a pair: current state value and function that lets you update it.
+// useState(0) - counter starts at 0
+
+
+DECLARING MULTIPLE STATE VARIABLES
+
+function ExampleWithMultiple() {
+    //declare multiple state variable
+    const [age, setAge] = useState(42);
+    const [fruit, setFruit] = useState('banana');
+    const [todos, setTodos] = useState([{ text: 'learn hook' }]);
+
+}
+
+// enables us to give different names to the state variable declared by calling useState
+// not part of useState API tho

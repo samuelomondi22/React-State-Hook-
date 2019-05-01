@@ -1,0 +1,3 @@
+Hooks are functions that let us hook into React state and lifecycle features from function components.
+Hook let React not use classes.
+React provides new built in Hooks
